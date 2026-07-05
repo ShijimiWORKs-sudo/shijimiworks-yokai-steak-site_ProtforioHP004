@@ -1,0 +1,150 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.figure {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.parallax {
+  position: absolute;
+  inset: -6% 0 -6% auto;
+  right: 0;
+  width: min(56%, 760px);
+  height: 112%;
+  transform: scale(1.04);
+  will-change: transform;
+}
+
+.parallax img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.veil {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      100deg,
+      var(--paper) 0%,
+      var(--paper) 38%,
+      rgba(247, 245, 241, 0.7) 52%,
+      rgba(247, 245, 241, 0) 74%
+    );
+}
+
+.content {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.eyebrow {
+  font-family: var(--serif);
+  font-style: italic;
+  letter-spacing: 0.12em;
+  color: var(--ink-faint);
+  margin-bottom: 1.4rem;
+  font-size: 1rem;
+}
+
+.title {
+  font-family: var(--serif);
+  font-size: clamp(2.6rem, 8vw, 5.4rem);
+  line-height: 1.24;
+  letter-spacing: 0.03em;
+  color: var(--ink);
+  margin-bottom: 1.8rem;
+}
+
+.sub {
+  color: var(--ink-soft);
+  font-size: clamp(0.95rem, 2.4vw, 1.1rem);
+  max-width: 42ch;
+  margin-bottom: 2.6rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.brDesktop {
+  display: none;
+}
+
+.scrollHint {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.scrollLine {
+  width: 1px;
+  height: 46px;
+  background: linear-gradient(var(--ink-faint), transparent);
+  animation: scrollPulse 2.4s ease-in-out infinite;
+  transform-origin: top;
+}
+
+@keyframes scrollPulse {
+  0%,
+  100% {
+    transform: scaleY(0.4);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 900px) {
+  .brDesktop {
+    display: inline;
+  }
+}
+
+@media (max-width: 760px) {
+  .parallax {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+  .veil {
+    background: linear-gradient(
+      180deg,
+      rgba(247, 245, 241, 0.72) 0%,
+      rgba(247, 245, 241, 0.85) 40%,
+      var(--paper) 100%
+    );
+  }
+  .content {
+    padding-top: 140px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scrollLine {
+    animation: none;
+  }
+}

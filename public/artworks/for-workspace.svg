@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" width="1000" height="750" role="img">
+  <defs>
+  <filter id="g21">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+    <feComposite operator="over" in2="SourceGraphic"/>
+  </filter></defs>
+  <rect width="1000" height="750" fill="#EFF1F3"/>
+  <g filter="url(#g21)"><rect width="1000" height="750" fill="#D6E0E7"/><rect x="614.3" y="142.7" width="353.5" height="472.6" fill="#A9C0D6" opacity="0.33"/><rect x="109.1" y="265.3" width="544.0" height="257.9" fill="#7E97AD" opacity="0.29"/><rect x="447.5" y="119.1" width="347.1" height="216.5" fill="#25303A" opacity="0.42"/><rect x="161.2" y="27.9" width="407.2" height="464.4" fill="#EFF1F3" opacity="0.45"/><rect x="355.2" y="208.2" width="644.0" height="476.0" fill="#A9C0D6" opacity="0.33"/></g>
+  <rect x="0" y="0" width="1000" height="750" fill="none" stroke="#25303A" stroke-opacity="0.06" stroke-width="2"/>
+</svg>

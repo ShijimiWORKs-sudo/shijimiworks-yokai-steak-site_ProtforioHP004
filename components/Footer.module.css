@@ -1,0 +1,106 @@
+.footer {
+  background: var(--ink);
+  color: var(--paper);
+  padding-top: clamp(3rem, 7vw, 5rem);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 2.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(247, 245, 241, 0.12);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  color: var(--paper);
+}
+
+.brand strong {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 0.03em;
+}
+
+.brand em {
+  font-style: normal;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(247, 245, 241, 0.55);
+}
+
+.tagline {
+  margin-top: 1rem;
+  color: rgba(247, 245, 241, 0.7);
+  font-size: 0.9rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.nav a {
+  font-size: 0.88rem;
+  color: rgba(247, 245, 241, 0.7);
+  transition: color 0.3s ease;
+  width: fit-content;
+}
+
+.nav a:hover {
+  color: var(--paper);
+}
+
+.label {
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(247, 245, 241, 0.5);
+  margin-bottom: 0.8rem;
+}
+
+.mail {
+  font-size: 0.95rem;
+  color: var(--paper);
+  border-bottom: 1px solid rgba(247, 245, 241, 0.4);
+  padding-bottom: 3px;
+  width: fit-content;
+  transition: border-color 0.3s ease;
+}
+
+.mail:hover {
+  border-color: var(--paper);
+}
+
+.small {
+  margin-top: 1rem;
+  font-size: 0.82rem;
+  color: rgba(247, 245, 241, 0.6);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-block: 1.6rem;
+  font-size: 0.76rem;
+  color: rgba(247, 245, 241, 0.5);
+}
+
+.sample {
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 720px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

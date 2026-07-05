@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" width="900" height="1200" role="img">
+  <defs>
+  <filter id="g2">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+    <feComposite operator="over" in2="SourceGraphic"/>
+  </filter></defs>
+  <rect width="900" height="1200" fill="#F4F1EB"/>
+  <g filter="url(#g2)"><rect width="900" height="1200" fill="#F4F1EB"/><path d="M102 22 Q 450 10 782 14" stroke="#D9C2C6" stroke-width="46.6" fill="none" stroke-linecap="round" opacity="0.49"/><path d="M110 139 Q 450 132 759 132" stroke="#B9A2A6" stroke-width="28.4" fill="none" stroke-linecap="round" opacity="0.42"/><path d="M135 291 Q 450 303 824 309" stroke="#33302C" stroke-width="13.2" fill="none" stroke-linecap="round" opacity="0.59"/><path d="M141 401 Q 450 439 752 388" stroke="#E4DBCF" stroke-width="28.7" fill="none" stroke-linecap="round" opacity="0.56"/><path d="M86 549 Q 450 539 717 568" stroke="#D9C2C6" stroke-width="57.9" fill="none" stroke-linecap="round" opacity="0.64"/><path d="M82 692 Q 450 728 682 686" stroke="#B9A2A6" stroke-width="37.8" fill="none" stroke-linecap="round" opacity="0.44"/><path d="M126 837 Q 450 833 738 818" stroke="#33302C" stroke-width="42.3" fill="none" stroke-linecap="round" opacity="0.71"/><path d="M93 947 Q 450 968 764 942" stroke="#E4DBCF" stroke-width="17.4" fill="none" stroke-linecap="round" opacity="0.49"/><path d="M124 1087 Q 450 1047 842 1096" stroke="#D9C2C6" stroke-width="41.7" fill="none" stroke-linecap="round" opacity="0.43"/></g>
+  <rect x="0" y="0" width="900" height="1200" fill="none" stroke="#33302C" stroke-opacity="0.06" stroke-width="2"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" width="900" height="1200" role="img">
+  <defs>
+  <filter id="g4">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+    <feComposite operator="over" in2="SourceGraphic"/>
+  </filter></defs>
+  <rect width="900" height="1200" fill="#F6F3ED"/>
+  <g filter="url(#g4)"><rect width="900" height="1200" fill="#F6F3ED"/><path d="M 764 958 L 679 1070 L 546 1152 L 458 1022 L 438 885 L 560 829 L 706 812 L 788 958 Z" fill="#EAE2D4" opacity="0.57"/><path d="M 734 650 L 663 896 L 424 838 L 207 775 L 294 566 L 399 352 L 655 413 L 677 650 Z" fill="#E0D2B7" opacity="0.47"/><path d="M 486 390 L 410 628 L 159 657 L -36 513 L -21 274 L 149 79 L 349 228 L 489 390 Z" fill="#C6A98A" opacity="0.71"/><path d="M 691 748 L 605 931 L 421 911 L 300 824 L 283 663 L 419 575 L 589 584 L 704 748 Z" fill="#2B2824" opacity="0.44"/><path d="M 620 507 L 488 670 L 289 809 L 163 600 L 103 384 L 315 318 L 522 301 L 542 507 Z" fill="#EAE2D4" opacity="0.53"/><path d="M 737 893 L 621 1009 L 492 1052 L 348 980 L 319 792 L 480 682 L 677 706 L 752 893 Z" fill="#E0D2B7" opacity="0.44"/></g>
+  <rect x="0" y="0" width="900" height="1200" fill="none" stroke="#2B2824" stroke-opacity="0.06" stroke-width="2"/>
+</svg>

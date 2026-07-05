@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F5F1"/>
+      <stop offset="1" stop-color="#EAE3D6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.85">
+    <rect x="120" y="150" width="260" height="330" fill="#E4DBCF"/>
+    <circle cx="250" cy="255" r="60" fill="#A9C0D6" opacity="0.75"/>
+    <path d="M140 470 L230 390 L290 430 L360 360 L360 470 Z" fill="#D9B9BE" opacity="0.8"/>
+    <rect x="120" y="150" width="260" height="330" fill="none" stroke="#2A2A28" stroke-opacity="0.15" stroke-width="2"/>
+  </g>
+  <text x="470" y="270" font-family="Georgia, 'Times New Roman', serif" font-size="60" fill="#2A2A28" letter-spacing="1">ShijimiWORKs</text>
+  <text x="472" y="330" font-family="Georgia, serif" font-size="34" fill="#5A5854">Art Collection</text>
+  <text x="472" y="400" font-family="'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif" font-size="26" fill="#5A5854">日々の余白に、静かな色を飾る。</text>
+  <line x1="472" y1="430" x2="1040" y2="430" stroke="#2A2A28" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="472" y="470" font-family="Georgia, serif" font-size="20" fill="#8A867E" letter-spacing="2">ONLINE GALLERY</text>
+</svg>
